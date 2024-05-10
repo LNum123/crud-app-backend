@@ -23,9 +23,7 @@ app.use("/api/product", productRoutes);
 
 
 
-//admin
-//8IhM3KQ9ihgvTyz5
-mongoose.connect('mongodb+srv://admin:8IhM3KQ9ihgvTyz5@backenddb.kle96k3.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackEndDB')
+mongoose.connect('mongodb+srv://admin:yourpassword@backenddb.kle96k3.mongodb.net/Node-API?retryWrites=true&w=majority&appName=BackEndDB')
 .then(() =>{ 
     console.log('Connected to MongoDB');
     app.listen(PORT, () => {
